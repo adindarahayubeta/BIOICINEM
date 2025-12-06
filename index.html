@@ -59,12 +59,12 @@
 
   </div>
 
-  <script>
-    function goNext() {
-      
-      window.location.href = "/folderbaru/";
-    }
-  </script>
+<script>
+function goNext() {
+  let base = window.location.pathname.replace(/\/$/, "");
+  window.location.href = base + "/folderbaru/";
+}
+</script>
 
 </body>
 </html>
